@@ -6,6 +6,9 @@
     <title>FireBase Tutorial</title>
     <meta name="description" content="Google FireBase tutorials">
 
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -22,7 +25,23 @@
     </div>
 
     <script src="app.js"></script>
-    
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCu9I1dm_A9jLrjN5qe_nedpEIRcNpASH0",
+          authDomain: "matt-firestore-tutorial.firebaseapp.com",
+          databaseURL: "https://matt-firestore-tutorial.firebaseio.com",
+          projectId: "matt-firestore-tutorial",
+          storageBucket: "matt-firestore-tutorial.appspot.com",
+          messagingSenderId: "1096916777017",
+          appId: "1:1096916777017:web:f3c963abb217604e56f5e8",
+          measurementId: "G-S8TKSBE4DM"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const db = firebase.firestore();
+      </script>
 </body>
 
 </html>
